@@ -1,0 +1,6 @@
+{
+  "name": "clohq-web",
+  "short_name": "clohq-web",
+  "start_url": "/",
+  "display": "standalone"
+}
