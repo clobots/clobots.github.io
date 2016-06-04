@@ -1,11 +1,32 @@
 <html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="/src/clohq-product/clohq-product.html">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300" rel="stylesheet" type="text/css">
 
 </head><body><dom-module id="clohq-web-app">
   <template>
-    <style>:host{display:block;}</style>
-    <h2>Hello [[prop1]]</h2>
+    <style include="iron-flex iron-flex-alignment">:host{display:block;font-family:'Source Sans Pro', sans-serif;padding:50px;max-width:980px;margin:auto;}.main-logo{width:100px;height:100px;margin-left:3px;}a{text-decoration:none;color:green;}h1, h2, h3{margin-left:8px;}</style>
+    <img class="main-logo" src="/src/assets/images/logo-500.png">
+    <div class="intro">
+      <h1>CLO is a digital product studio.</h1>
+      <h1>We build products to help you Create, Learn and Optimize your world.</h1>
+    </div>
+    <div class="products layout horizontal wrap">
+      <clohq-product name="Medium Desk" desc="Minimal Desktop App for Medium" url="http://mediumdesk.com" color="#81C784">
+      </clohq-product>
+      <clohq-product name="Meditor" desc="Offline Markdown Editor built for Medium" url="http://meditorapp.com" color="#81C784">
+      </clohq-product>
+    </div>
+    <div class="products layout horizontal wrap">
+      <clohq-product name="Math Candy" desc="An interesting game that exercises the math skills of a child along with a role-playing game experience" url="https://play.google.com/store/apps/details?id=com.ringaringagames.mathcandy" color="#64b5f6">
+      </clohq-product>
+    </div>
+    <div class="footer">
+      <h3>Looking for the team? <a href="https://twitter.com/sivragav">Siv Ragav</a>, <a href="https://www.linkedin.com/in/anushaanbarasan">Anusha Anbarasan</a>, <a href="https://www.linkedin.com/in/sandeep-guggilam-31712116">Sandeep Guggilam</a> and <a href="https://www.linkedin.com/in/vvkchandra">Chandra Gundamaraju</a>.</h3>
+      <h3>Investor or press? Contact us: <a href="mailto:hello@clohq.com">hello@clohq.com</a></h3>
+    </div>
   </template>
 
-  <script>Polymer({is:"clohq-web-app",properties:{prop1:{type:String,value:"clohq-web-app"}}});</script>
+  <script>Polymer({is:"clohq-web-app",properties:{}});</script>
 </dom-module>
 </body></html>
