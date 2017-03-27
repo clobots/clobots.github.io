@@ -5,8 +5,3 @@
 app/css/*
 dist
 
-# Dev directories
-bower_components
-node_modules
-
-README.md
