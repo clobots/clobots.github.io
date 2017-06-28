@@ -1,0 +1,69 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="/src/clodotai-product/clodotai-product.html">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300" rel="stylesheet" type="text/css">
+
+<dom-module id="clodotai-web-app">
+  <template>
+    <style include="iron-flex iron-flex-alignment">
+      :host {
+        display: block;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 50px;
+        max-width: 980px;
+        margin: auto;
+      }
+
+      .main-logo {
+        width: 70px;
+        height: 70px;
+        margin-left: 8px;
+      }
+
+      a {
+        text-decoration: none;
+        color: green;
+      }
+
+      h1, h2, h3, p {
+        margin-left: 8px;
+      }
+
+      .footer {
+        padding-top: 20px;
+      }
+    </style>
+    <img class="main-logo" src="/src/assets/images/logo-500-black.png">
+    <div class="intro">
+      <h1>We build products that are powered by AI.</h1>
+    </div>
+    <div class="products layout horizontal wrap">
+      <clodotai-product name="Meditor" desc="AI-powered editor built for medium.com" url="http://meditorapp.com" color="#81C784">
+      </clodotai-product>
+      <clodotai-product name="Medium Desk" desc="Minimal Desktop App for medium.com" url="https://github.com/sivahq/mediumdesk" color="#81C784">
+      </clodotai-product>
+    </div>
+    <div class="products layout horizontal wrap">
+      <!--<clodotai-product-->
+        <!--name="Math Candy"-->
+        <!--desc="An interesting game that exercises the math skills of a child along with a role-playing game experience"-->
+        <!--url="https://play.google.com/store/apps/details?id=com.ringaringagames.mathcandy"-->
+        <!--color="#64b5f6">-->
+      <!--</clodotai-product>-->
+    </div>
+    <div class="footer">
+      <h3>What's new? Check out our <a href="https://medium.com/clodotai">updates</a>.</h3>
+      <h3>Keep in touch? Follow us on <a href="https://twitter.com/clodotai">twitter</a>.</h3>
+      <h3>Work with us? Drop a note to <a href="mailto:hello@clo.ai">hello@clo.ai</a></h3>
+    </div>
+    <p>© 2017 CLO.ai</p>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'clodotai-web-app',
+      properties: {
+      },
+    });
+  </script>
+</dom-module>

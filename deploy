@@ -1,4 +1,0 @@
-#!/bin/sh
-
-polymer build
-cp -r build/bundled/* ../clohq.github.io/
